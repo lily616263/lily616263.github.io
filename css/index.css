@@ -1,0 +1,98 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    display: block;
+    background-color: black;
+}
+input{
+    width: 90%;
+    font-size: 18px;
+    margin-left: 30px;
+}
+.hengfu{
+    width: 100%;
+}
+@media screen and (max-width:700px){
+    a{
+        height: 8%;
+    }
+}
+@media screen and (min-width:700px){
+    a{
+        height: 44.8px;
+    }
+    .hengfu{
+        height: 360px;
+    }
+}
+.sixpic{
+    margin: 5px auto;
+}
+@media screen and (max-width:720px){
+    .sixpic{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        
+    }
+   
+}
+@media screen and (min-width:720px){
+    .sixpic{
+        width: 720px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    
+}
+ .sixpic img{
+         width: calc(97%/3);
+         margin-top: 5px;
+}
+.kind{
+    border-bottom: 1px solid green;
+}
+.kind .image{
+    display: inline-block;
+}
+.intro{
+    display: inline-block;
+    margin: 0;
+}
+.tabbar{
+    padding: 5px 0;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    justify-content: space-around;
+    background-color: #fff;
+}
+@media screen and (max-width:700px){
+    .tabbar{
+        height: 10vw;
+    }
+}
+@media screen and (min-width:700px){
+     .tabbar{
+        height: 70px;
+     }
+}
+.tabbar a{
+    color: black;
+    background-color: #fff;
+    text-decoration: none;
+}
+ .tabbar a img{
+    display: block;
+    width: 40%;
+ }
+
+.tabbar a span{
+    background-color: #fff;
+}
