@@ -13,9 +13,11 @@
 <body>
     <div ng-app="app" >
         <div class="page__bd" style="height: 100%;">
+              <div class="weui-tab">
+                <div class="weui-tab__panel">
             <div ng-view></div>
-            <div class="weui-tabbar" ng-controller="mainController">
-                <a href="#/" class="weui-tabbar__item weui-bar__item_on" >
+            <div class="weui-tabbar">
+                <a href="#/" class="weui-tabbar__item weui-bar__item_on" ng-controller="mainController">
                     <img src="./assets/images/icon_nav_panel.png" alt="" class="weui-tabbar__icon">
                     <p class="weui-tabbar__label">首页</p>
                 </a>
@@ -34,6 +36,9 @@
             </div>
 
         </div>
+              </div>
+        </div>
+    </div>
         <script src="assets/lib/angular.js"></script>
         <script src="assets/lib/angular-route.js"></script>
         <script src="assets/app.js"></script>
