@@ -5,20 +5,40 @@
     <meta charset="utf-8" />
     <meta name="author" content="李莉" />
     <title>当当网热搜榜</title>
-        <style>
-            
-        </style>
+    <style>
+
+    </style>
 </head>
 
 <body>
-    <div ng-app="app" ng-controller="mainController">
-        <div ng-view></div>
-    </div>
-    <script src="assets/lib/angular.js"></script>
-    <script src="assets/lib/angular-route.js"></script>
-    <script src="assets/app.js"></script>
-    <script src="assets/api/service.js"></script>
-    <script src="assets/controllers/main_controller.js"></script>
+    <div ng-app="app" >
+        <div class="page__bd" style="height: 100%;">
+            <div ng-view></div>
+            <div class="weui-tabbar" ng-controller="mainController">
+                <a href="#/" class="weui-tabbar__item weui-bar__item_on" >
+                    <img src="./assets/images/icon_nav_panel.png" alt="" class="weui-tabbar__icon">
+                    <p class="weui-tabbar__label">首页</p>
+                </a>
+                <a href="#/" class="weui-tabbar__item">
+                    <img src="./assets/images/icon_nav_icons.png" alt="" class="weui-tabbar__icon">
+                    <p class="weui-tabbar__label">我的blog</p>
+                </a>
+                <a href="#/list/123" class="weui-tabbar__item">
+                    <img src="./assets/images/icon_nav_article.png" alt="" class="weui-tabbar__icon">
+                    <p class="weui-tabbar__label">当当热销</p>
+                </a>
+                <a href="#/about_me" class="weui-tabbar__item">
+                    <img src="./assets/images/icon_nav_flow.png" alt="" class="weui-tabbar__icon">
+                    <p class="weui-tabbar__label">关于我</p>
+                </a>
+            </div>
+
+        </div>
+        <script src="assets/lib/angular.js"></script>
+        <script src="assets/lib/angular-route.js"></script>
+        <script src="assets/app.js"></script>
+        <script src="assets/api/service.js"></script>
+        <script src="assets/controllers/main_controller.js"></script>
 </body>
 
 </html>
