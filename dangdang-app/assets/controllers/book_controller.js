@@ -1,4 +1,4 @@
-app.controller('mainController',['$scope',function(){
+app.controller('bookController',['$scope',function(){
     $scope.bookTypes = [
         {id:'art',name:'儿童'},
         {id:'history',name:'历史'},
