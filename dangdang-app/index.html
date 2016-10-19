@@ -6,16 +6,9 @@
     <meta name="author" content="李莉" />
     <title>当当网热搜榜</title>
     <style>
-        html {
-            box-sizing: border-box;
-            height: 100%;
-            width: 100%;
-        }
-        
-        body {
-            height: 100%;
-            width: 100%;
-        }
+       html,body,.container{
+      height: 100%;
+    }
     </style>
     <link rel="stylesheet" href="./assets/tpl/lib/weui/weui.css">
 </head>
@@ -33,20 +26,20 @@
         </div>
     </div>
     <div class="weui-tabbar" ng-controller="mainController">
-                    <a href="#/" class="weui-tabbar__item weui-bar__item_on">
+                    <a href="#/"  class="weui-tabbar__item weui-bar__item_on ">
                         <img src="./assets/images/icon_tabbar.png" alt="" class="weui-tabbar__icon">
                         <p class="weui-tabbar__label">当当</p>
                     </a>
-                    <a href="#/blog" class="weui-tabbar__item">
-                        <img src="./assets/images/icon_tabbar.png" alt="" class="weui-tabbar__icon">
+                    <a href="#/blog"  class="weui-tabbar__item ">
+                        <img src="./assets/images/icon_tabbar.png" alt="" class="weui-tabbar__icon weui-bar__item_on">
                         <p class="weui-tabbar__label">我的blog</p>
                     </a>
-                    <a href="#/book" class="weui-tabbar__item">
-                        <img src="./assets/images/icon_tabbar.png" alt="" class="weui-tabbar__icon">
+                    <a href="#/book"  class="weui-tabbar__item ">
+                        <img src="./assets/images/icon_tabbar.png" alt="" class="weui-tabbar__icon weui-bar__item_on">
                         <p class="weui-tabbar__label">当当热搜</p>
                     </a>
-                    <a href="#/about_me" class="weui-tabbar__item">
-                        <img src="./assets/images/icon_tabbar.png" alt="" class="weui-tabbar__icon">
+                    <a href="#/about_me"  class="weui-tabbar__item ">
+                        <img src="./assets/images/icon_tabbar.png" alt="" class="weui-tabbar__icon weui-bar__item_on">
                         <p class="weui-tabbar__label">关于我</p>
                     </a>
                 </div>

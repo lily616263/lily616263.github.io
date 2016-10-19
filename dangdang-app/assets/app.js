@@ -2,23 +2,23 @@ var app = angular.module('app', ['ngRoute'])
 app.config(['$routeProvider', function ($routeProvider) {
     $routeProvider
         .when('./', {
-            tempalteUrl: './assets/tpl/index.html',
+            tempalteUrl: './tpl/index.html',
             controller: ''
         })
         .when('/blog', {
-            tempalteUrl: './assets/tpl/blog.html',
+            tempalteUrl: './tpl/blog.html',
             controller: ''
         })
         .when('/book', {
-            tempalteUrl: './assets/tpl/book.html',
+            tempalteUrl: './tpl/book.html',
             controller: 'bookController'
         })
         .when('/about_me', {
-            tempalteUrl: './assets/tpl/about_me.html',
+            tempalteUrl: './tpl/about_me.html',
             controller: ''
         })
         .when('/book_list', {
-            templatewUrl: './assets/tpl/book_list.html',
+            templatewUrl: './tpl/book_list.html',
             controller: 'bookListController'
         })
         .otherwise({
