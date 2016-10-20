@@ -17,7 +17,7 @@ app.config(['$routeProvider', function ($routeProvider) {
             tempalteUrl: './tpl/about_me.html',
             controller: ''
         })
-        .when('/book_list', {
+        .when('/book_list/:id', {
             templatewUrl: './tpl/book_list.html',
             controller: 'bookListController'
         })
