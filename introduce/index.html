@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8" />
+	<meta name="author" content="李莉" />
+	<title></title>
+	<style>
+	* {
+			box-sizing: border-box;
+		}
+		
+		ul {
+			list-style: none;
+		}
+		
+		.main {
+			width: 300px;
+			position: absolute;
+			right: 200px;
+			margin: auto;
+		}
+		
+		li {
+			margin: 20px auto;
+			border-bottom: 1px dashed #FFF;
+		}
+		
+		#menu {
+			margin: 0;
+			padding: 0;
+			position: fixed;
+			width: 100%;
+			z-index: 9;
+			top: 0;
+			height: 60px;
+			line-height: 60px;
+			background-color: blanchedalmond;
+		}
+		
+		#menu li {
+			float: left;
+			list-style: none;
+			margin-right: 10px;
+			border: none;
+		}
+		
+		#section0 {
+			margin-top: 60px;
+			position: relative;
+		}
+		
+		#section0 ul {
+			bottom: 10px;
+		}
+		.left{
+            margin: 0 auto;
+			width: 200px;
+			height: 200px;
+			position: relative;
+			top: -100px;
+		}
+		.left  img{
+			
+			width: 200px;
+			height: 200px;
+			border-radius: 50%;
+			
+			animation:fadeInRightBig 5s;
+			animation:rotateIn 5s;
+		}
+		
+		.top {
+			position: absolute;
+			top: 200px;
+			left: 50px;
+		}
+	}
+	.right {
+		position: relative;
+		left: 100px;
+	}
+	#section3 {
+		background-color: gray;
+	}
+	#section3 h1 {
+		top: -300px;
+	}
+	#section1 h1 {
+		top: -300px;
+	}
+	h1 {
+		position: relative;
+		top: -130px;
+		text-align: center;
+	}
+	.clear {
+		clear: both
+	}
+	.transform {
+		margin-left: 10px;
+		animation: fadeInLeft 3s;
+	}
+	.rotate {
+		animation: fadeInRight 2s;
+	}
+	</style>
+	<link rel="stylesheet" href="lib/jquery.fullpage.css">
+	<link rel="stylesheet" href="lib/animate.css">
+</head>
+
+<body>
+	<ul id="menu">
+		<li data-menuanchor="firstPage" class="active"><a href="#firstPage">首页</a></li>
+		<li data-menuanchor="secondPage"><a href="#secondPage">自我介绍</a></li>
+		<li data-menuanchor="3rdPage"><a href="#3rdPage">专业技能</a></li>
+		<li data-menuanchor="fourthPage"><a href="#fourthPage">项目</a></li>
+	</ul>
+	<div id="fullpage">
+		<div class="section active" id="section0">
+			<h1>我 . 之家</h1>
+			<div class="left"><img src="image/me.jpg" alt=""></div>
+			<ul class="main">
+				<li><span>姓名:</span>李莉</li>
+				<li><span>性别:</span>女</li>
+				<li><span>民族:</span>汉</li>
+				<li><span>婚姻状况:</span>未婚</li>
+				<li><span>年龄:</span>23</li>
+				<li><span>现所在地:</span>河南省郑州市</li>
+				<li><span>兴趣爱好:</span>购物、阅读</li>
+				<li><span>联系电话:</span>15639911564</li>
+				<li><span>电子邮件:</span>m15639911564_1@163.com</li>
+			</ul>
+
+			<div class="right"><img src="image/homeTitle.png" alt=""></div>
+
+
+		</div>
+
+		<div class="section" id="section1">
+			<h1>自我介绍</h1>
+			<div class="top">
+				<span>自我评价:</span>
+				<ol class="transform">
+					<li class="first">对web前端充满激情，热衷于开发优秀的web产品</li>
+					<li>注重团队协作，善于学习，乐于探索，敢于创新</li>
+					<li>对设计和交互非常感兴趣，开发产品善于从客户的角度去思考问题</li>
+					<li>能够编写js代码，可以配合后台工程师完成工作</li>
+					<li>英语没过六级且开发经验不足，但我会在将来的生活中用自己的行动克服这些问题</li>
+				</ol>
+			</div>
+			<div class="main">
+				<span>我的大学:</span>
+				<ul class=" rotate">
+					<li><span>学校:</span>河南科技学院</li>
+					<li><span>专业:</span>通信工程</li>
+					<li><span>学历:</span>本科</li>
+					<li><span>外语水平:</span>CET-4</li>
+					<li><span>兴趣爱好:</span>电影、足球、阅读</li>
+					<li><span>校内职务:</span>寝室长</li>
+				</ul>
+			</div>
+         
+		</div>
+		<div class="section" id="section2">
+			<h1>专业技能</h1>
+			<ul class="">
+				<li class="fade fade1">熟练掌握语义化的 HTML 和具有兼容性的 CSS 模式，熟练手写符合 W3C 标准的结构和代码。</li>
+				<li class="fade fade3">对 可用性、可访问性、前端性能优化、最优实践 等有一定的了解和实践。</li>
+				<li class="fade fade2">对 HTML5 和 CSS3 有一定了解。</li>
+				<li class="fade fade4">熟练掌握 ST2 、Emmet、Sass 等等前端开发和团队协作工具。</li>
+				<li class="fade fade4">熟练掌握 jQuery，实现日常需要的交互效果。</li>
+				<li class="fade fade3">熟悉EXTJS，Nodejs，MySQl，有一定 PHP 后端相关知识。</li>
+				<li class="fade fade2">了解 Ajax 工作原理和实现方法。</li>
+				<li class="fade fade2">对前端canvas，svg有一定了解。</li>
+				<li class="fade fade1">了解手机前端开发jquerymobile，zeptojs及angularjs等。</li>
+
+				<li class="fade fade2">喜欢接触新事物，有一定的自学能力。</li>
+			</ul>
+		</div>
+		<div class="section" id="section3">
+			<div class="slide ">
+				<h1>项目1</h1>
+				<div class="works-item first fade fade1">
+							<a href="https://qiudayan.github.io/test/919practise/919test/" target="_blank">
+								<img src="images/works/xiangmu1.png" alt="" width="300" height="180">
+								<div class="work-info">
+									<h2>第一份兼职切图</h2>
+									<p><strong>开发时间</strong>：2015年3月<br>
+										<strong>工作详情</strong>：前端页面设计。</p>
+								</div>
+							</a>
+						</div>
+			</div>
+			<div class="slide active">
+				<h1>项目2</h1>
+			</div>
+			<div class="slide">
+				<h1>项目3</h1>
+			</div>
+			<div class="slide">
+				<h1>项目4</h1>
+			</div>
+		</div>
+	</div>
+	<script src="lib/jquery.min.js"></script>
+	<script src="lib/jquery.fullpage.min.js"></script>
+	<script type="text/javascript">
+        $(document).ready(function() {
+            $('#fullpage').fullpage({
+                menu: '#menu',
+                anchors: ['firstPage', 'secondPage', '3rdPage',"fourthPage"],
+                sectionsColor: ['#C63D0F', '#1BBC9B', '#7E8F7C'],
+                autoScrolling: false
+            });
+        });
+    </script>
+</body>
+
+</html>
