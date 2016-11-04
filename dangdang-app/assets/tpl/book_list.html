@@ -1,11 +1,17 @@
-<h1>这是book_list界面</h1>
+<h1>这是</h1>
 <div class="weui_cells" ng-repeat="item in data">
   <div class="weui_cell">
-    <div class="weui_cell_bd weui_cell_primary">
-      <p>{{item.title}}</p>
-    </div>
-    <div class="weui_cell_ft">
-      {{item.publister}}
-    </div>
+    <a ng-repeat="item in data" ng-href="{{item.linkUrl}}" class="weui-media-box weui-media-box_appmsg">
+       <div class="weui-media-box__hd">
+                    <img class="weui-media-box__thumb" ng-src="{{item.imgUrl}}" alt="">
+                </div>
+    
+     <div class="weui-media-box__bd">
+                    <h4 class="weui-media-box__title">{{item.title}}</h4>
+                    <p class="weui-media-box__desc">{{item.author}}</p>
+                    <p class="weui-media-box__desc">{{item.public}}</p>
+                    <p class="weui-media-box__desc">{{item.time}}</p>
+                </div>
+    </a>
   </div>
 </div>

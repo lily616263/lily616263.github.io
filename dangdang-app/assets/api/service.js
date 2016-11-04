@@ -4,7 +4,7 @@ app.factory('commonService',['$http',function($http){
 
     service.getData = function(type,callBack){
         $http({
-            url:'http://lily616263.github.io/dangdang-app/data/book_'+ type +'.json',
+            url:'https://lily616263.github.io/dangdang-app/data/book_'+ type +'.json',
             method:'get'
         })
         .then(function(res){
